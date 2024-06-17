@@ -1,0 +1,101 @@
+/* Header styles */
+header {
+  background: url(images/central_park.jpg) 0 -200px no-repeat;  /* Set background image */
+  background-size: cover; /* Set background size */
+  height: 400px; /* Set header height */
+  padding-top: 100px; /* Add padding to the top */
+  padding-left: 100px; /* Add padding to the left */
+  font-weight: bold; /* Make font bold */
+  font-family: Arial, Helvetica, sans-serif; /* Set font family */
+}
+
+/* List item styles */
+li {
+  list-style-type: none; /* Remove bullet points */
+  display: inline; /* Display list items inline */
+  padding: 0 20px; /* Add padding to left and right */
+}
+
+/* Anchor tag styles */
+li a {
+  text-decoration: none; /* Remove underline */
+}
+
+/* Anchor tag states */
+li a:link {
+  color: #000; /* Link color before click */
+}
+li a:visited {
+  color: #818db3; /* Link color after click */
+}
+li a:hover {
+  color: #333; /* Link color on mouse hover */
+}
+li a:active {
+  color: #753a30; /* Link color on mouse down */
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgb(255, 245, 238); /* Set background color */
+  height: 50px; /* Set height */
+  text-align: center; /* Center text */
+  padding-top: 2px; /* Add padding to the top */
+}
+
+/* Main content styles */
+main {
+  margin: 50px; /* Add margin */
+}
+
+/* Main heading styles */
+main h1 {
+  color: rgb(129, 141, 179); /* Set text color */
+  font-family: arial; /* Set font family */
+}
+
+/* Footer styles */
+footer {
+  height: 40px; /* Set height */
+  background-color: rgb(129, 141, 179); /* Set background color */
+  text-align: center; /* Center text */
+  padding-top: 20px; /* Add padding to the top */
+  color: rgb(211, 218, 240); /* Set text color */
+}
+
+/* Responsive styles for screens less than 600px */
+@media (max-width: 599px) {
+  .cards {
+      display: block; /* Stack cards vertically */
+  }
+  .card {
+      width: 100%; /* Full width for each card */
+  }
+  header {
+      background-size: cover; /* Cover the header area with the background image */
+      padding-left: 20px; /* Adjust left padding */
+  }
+  nav ul {
+      padding-left: 0; /* Remove left padding */
+  }
+}
+
+/* Responsive styles for screens 600px or wider */
+@media (min-width: 600px) {
+  .cards {
+      display: flex; /* Display cards in a flex container */
+      flex-wrap: wrap; /* Allow wrapping of flex items */
+  }
+  .card {
+      width: 50%; /* Each card takes up 50% width */
+  }
+  header {
+      background-size: contain; /* Fit the background image within the header */
+  }
+}
+
+/* Image styles */
+img {
+  max-width: 100%; /* Scale image to fit within its container */
+  height: auto; /* Maintain aspect ratio */
+}
